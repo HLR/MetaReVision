@@ -1,0 +1,38 @@
+base_model: 'lxmert'
+
+
+MetaTrain:
+  meta_train_epoch_num: 1000
+  outer_lr: 0.0001
+  inner_lr: 0.0001
+  inner_update_steps: 1
+
+  episode_num: 50
+  episode_batch_size: 64
+  target_comp_cpt_num: 3
+  shot_num: 8
+  mask_sup_pair: True
+
+  load_pretrain: True
+
+  clip_grad: 0.3
+
+  sup_weight: 1.0
+
+  Higher: True
+
+
+
+train:
+  epoch_num: 15
+  batch_size: 64
+  lr: 0.0001
+
+
+test:
+  batch_size: 64
+
+
+val:
+  batch_size: 64
+

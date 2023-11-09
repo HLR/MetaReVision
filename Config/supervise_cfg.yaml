@@ -1,0 +1,14 @@
+base_model: 'vlbert'
+
+num_workers: 8
+
+train:
+  epoch_num: 15
+  batch_size: 128
+  lr: 0.0001
+
+val:
+  batch_size: 128
+
+test:
+  batch_size: 128
